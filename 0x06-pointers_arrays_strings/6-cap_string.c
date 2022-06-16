@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
-*
-*/
-char *cap_string(char *x)
+ * cap_string - capitalizing strings
+ * @s: capitalizing purposes
+ *
+ * Return: s element
+ */
+char *cap_string(char *s)
 {
 	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
