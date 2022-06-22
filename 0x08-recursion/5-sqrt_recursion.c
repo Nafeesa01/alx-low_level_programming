@@ -20,9 +20,10 @@ int _sqrt_recursion(int n)
  */
 int _sqrt(int n, int r)
 {
+	int square = r * r;
+	if (r * r > n)
+		return (-1);
 	if (r * r == n)
 		return (r);
-	else if (r * r > n)
-		return (-1);
-	return (do_sqrt_recursion(n, r + 1));
+	return (_sqrt(n, r + 1));
 }
