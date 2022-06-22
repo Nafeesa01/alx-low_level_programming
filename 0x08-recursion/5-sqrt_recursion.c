@@ -1,11 +1,12 @@
 #include "main.h"
 
+int _sqrt(int, int);
 /**
  * do_sqrt_recursion - needs extra parameter r to work
  * @n: number
  * @r: iterator
  *
- * Return: the natural root of n or -1 if not found
+ * Return: number
  */
 int do_sqrt_recursion(int n, int r)
 {
