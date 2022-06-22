@@ -1,21 +1,6 @@
 #include "main.h"
 
 int _sqrt(int, int);
-/**
- * do_sqrt_recursion - needs extra parameter r to work
- * @n: number
- * @r: iterator
- *
- * Return: number
- */
-int do_sqrt_recursion(int n, int r)
-{
-	if (r * r == n)
-		return (r);
-	else if (r * r > n)
-		return (-1);
-	return (do_sqrt_recursion(n, r + 1));
-}
 
 /**
  * _sqrt_recursion - sqrt that use recursion
@@ -24,5 +9,20 @@ int do_sqrt_recursion(int n, int r)
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+        return (_sqrt(n, 1));
+}
+/**
+ * _sqrt- needs extra parameter r to work
+ * @n: a number
+ * @r: an iterator
+ *
+ * Return: number
+ */
+int _sqrt(int n, int r)
+{
+	if (r * r == n)
+		return (r);
+	else if (r * r > n)
+		return (-1);
+	return (do_sqrt_recursion(n, r + 1));
 }
