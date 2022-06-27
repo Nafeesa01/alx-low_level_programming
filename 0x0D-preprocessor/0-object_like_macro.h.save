@@ -1,0 +1,16 @@
+// From the general formula of guarding header files
+  /**
+   * #ifndef _FILE_NAME_H_
+   * #define _FILE_NAME_H_
+   *
+   * Write code here (#define [identifier name] [value])
+   *
+   * #endif // #ifndef _FILE_NAME_H
+   */
+
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
+
+#define SIZE 1024
+
+#endif
